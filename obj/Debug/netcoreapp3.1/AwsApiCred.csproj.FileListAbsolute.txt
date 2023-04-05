@@ -83,6 +83,7 @@ C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\ru\Microsoft.Co
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.csproj.AssemblyReference.cache
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.AssemblyInfoInputs.cache
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.AssemblyInfo.cs
@@ -96,6 +97,7 @@ C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\scopedcss\bundl
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.TagHelpers.input.cache
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.TagHelpers.output.cache
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.RazorCoreGenerate.cache
+C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contrato.cshtml.g.cs
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.RazorTargetAssemblyInfo.cache
@@ -105,5 +107,3 @@ C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.cspr
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.pdb
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.genruntimeconfig.cache
-C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contrato.cshtml.g.cs
-C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.csproj.AssemblyReference.cache

@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contrato</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e2e2e2;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="password"], input[type="checkbox"] {
+            display: block;
+            width: 20%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            display: block;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+            button[type="submit"]:hover {
+                background-color: #3e8e41;
+            }
+
+        #codigo-generado {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+
+    <h1>Contrato</h1>
+
+    @if (Model != null)
+    {
+<table>
+    <tr>
+        <th>Contrato_tms</th>
+        <td>@Model.contrato_tms</td>
+    </tr>
+    <tr>
+        <th>Cliente</th>
+        <td>@Model.cliente</td>
+    </tr>
+    <tr>
+        <th>cliente_para_validaciones</th>
+        <td>@Model.cliente_para_validaciones</td>
+    </tr>
+    <tr>
+        <th>destinatario_nombre_corto</th>
+        <td>@Model.destinatario_nombre_corto</td>
+    </tr>
+</table>
+    }
+    else
+    {
+        <p>No se encontró ningún contrato</p>
+    }
+
+    <button type="button" onclick="generateCode()">Generar código</button>
+    <p>Código generado: <span id="codigo-generado"></span></p>
+
+    @if (Model != null)
+    {
+<form action="/Contratos/PostLogin" method="post">
+    <label for="userName">userName:</label>
+    <input type="text" id="userName" name="userName" value=@Model.destinatario_nombre_corto>
+
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" readonly>
+
+    <label for="clientId">Client ID:</label>
+    <input type="text" id="clientId" name="clientId" value=@Model.cliente_para_validaciones readonly>
+
+    <label for="isActive">Is Active:</label>
+    <input type="checkbox" id="isActive" name="isActive" value="true" disabled checked>
+
+    <label for="groupId">Group ID:</label>
+    <input type="text" id="groupId" value="a41c256b-d4c7-4bc1-9092-c3aded9c391c" name="groupId" readonly><!--test-->
+    @*<input type="text" id="groupId" value="b9ce68f5-7d77-4cce-b492-d9da2847b6e1" name="groupId">*@
+
+    <button type="submit">Enviar</button>
+</form>
+    }
+    @if (ViewBag.Result != null)
+    {
+        <div>Resultado: @ViewBag.Result</div>
+    }
+
+    <script>
+        function generateCode() {
+            var codigoGenerado = "";
+            var caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var longitudCodigo = 10;
+
+            for (var i = 0; i < longitudCodigo; i++) {
+                var indice = Math.floor(Math.random() * caracteres.length);
+                codigoGenerado += caracteres.charAt(indice);
+            }
+            document.getElementById("password").value = codigoGenerado;
+        }
+    </script>

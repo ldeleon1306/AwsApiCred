@@ -1,0 +1,29 @@
+﻿<h1 style="font-size: 28px; font-weight: bold;">Contrato</h1>
+<div style="margin-top: 20px;">
+    @using (Html.BeginForm("BuscarContrato", "Home", FormMethod.Get))
+    {
+        <div style="display: flex; justify-content: center;">
+            <input type="text" name="idContrato" placeholder="Ingrese el ID del contrato" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; width: 250px; margin-right: 10px;" />
+            <button type="submit" style="background-color: #4CAF50; color: white; padding: 8px 16px; border: none; border-radius: 5px;">Buscar</button>
+        </div>
+    }
+    @if (Model != null)
+    {
+        <div style="margin-top: 20px;">
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align: left; padding: 8px; background-color: #4CAF50; color: white; border: 1px solid #ddd;">Contrato_tms</th>
+                    <td style="text-align: left; padding: 8px; border: 1px solid #ddd;">@Model.contrato_tms</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; background-color: #4CAF50; color: white; border: 1px solid #ddd;">Cliente</th>
+                    <td style="text-align: left; padding: 8px; border: 1px solid #ddd;">@Model.cliente</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; background-color: #4CAF50; color: white; border: 1px solid #ddd;">Cliente_para_validaciones</th>
+                    <td style="text-align: left; padding: 8px; border: 1px solid #ddd;">@Model.cliente_para_validaciones</td>
+                </tr>
+            </table>
+        </div>
+    }
+</div>

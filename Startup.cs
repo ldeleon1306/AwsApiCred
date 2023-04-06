@@ -1,5 +1,6 @@
 using AwsApiCred.Controllers;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -30,6 +32,9 @@ namespace AwsApiCred
             //services.AddHttpClient();
             services.AddControllersWithViews();
             services.AddScoped<ContratosController>();
+            services.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo(@"c:\temp\keys"))
+    .ProtectKeysWithCertificate("thumbprint");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

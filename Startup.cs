@@ -33,7 +33,7 @@ namespace AwsApiCred
             services.AddControllersWithViews();
             services.AddScoped<ContratosController>();
             services.AddDataProtection()
-    .PersistKeysToFileSystem(new DirectoryInfo(@"c:\temp\keys"));
+    .PersistKeysToFileSystem(new DirectoryInfo(@"/app/tmp/keys"));
     //.ProtectKeysWithCertificate("thumbprint");
         }
 

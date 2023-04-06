@@ -33,8 +33,8 @@ namespace AwsApiCred
             services.AddControllersWithViews();
             services.AddScoped<ContratosController>();
             services.AddDataProtection()
-    .PersistKeysToFileSystem(new DirectoryInfo(@"c:\temp\keys"))
-    .ProtectKeysWithCertificate("thumbprint");
+    .PersistKeysToFileSystem(new DirectoryInfo(@"c:\temp\keys"));
+    //.ProtectKeysWithCertificate("thumbprint");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

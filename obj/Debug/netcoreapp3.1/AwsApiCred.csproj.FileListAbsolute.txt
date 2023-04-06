@@ -98,6 +98,7 @@ C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.TagH
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.RazorCoreGenerate.cache
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contrato.cshtml.g.cs
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\Razor\Views\Home\Resultado.cshtml.g.cs
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.RazorTargetAssemblyInfo.cache
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.RazorTargetAssemblyInfo.cs
@@ -106,3 +107,4 @@ C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.cspr
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.pdb
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.genruntimeconfig.cache
+C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.csproj.AssemblyReference.cache

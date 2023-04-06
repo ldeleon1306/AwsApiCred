@@ -1,0 +1,35 @@
+﻿@using Newtonsoft.Json
+@*@ViewBag.SentData*@
+
+@*<h1>Datos enviados:</h1>
+
+    ViewBag.JsonData = JsonConvert.SerializeObject(SentData);*@
+
+
+@if (ViewBag.Result != null)
+{
+    <h1>Resultado de la asociación:</h1>
+    <p>@ViewBag.Result</p>
+}
+else
+{
+    dynamic jsonData = JsonConvert.DeserializeObject(ViewBag.JsonData);
+    <h1>Datos enviados:</h1>
+    <p>@jsonData</p>
+    <h1>Respuesta:</h1>
+    <p>@ViewBag.Response</p>
+    // Convertir la cadena JSON a un objeto dinámico
+   
+
+
+    <form method="post" action="/Home/Asociar">
+        <input type="hidden" name="userName" value="@jsonData.userName" />
+        <input type="hidden" name="clientId" value="@jsonData.clientId" />
+        <button type="submit" style="background-color: #4CAF50; color: yellow; padding: 8px 16px; border: none; border-radius: 5px;">Asociar</button>
+    </form>
+}
+
+
+
+
+<a href="@Url.Action("Index", "Home")" style="background-color: #4CAF50; color: white; padding: 8px 16px; border: none; border-radius: 5px;">Inicio</a>

@@ -20,7 +20,7 @@
     "AwsApiCred": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "https://localhost:5001/home",
+      "launchUrl": "https://localhost:5003/home",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

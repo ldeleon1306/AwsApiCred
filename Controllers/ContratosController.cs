@@ -65,13 +65,14 @@ namespace AwsApiCred.Controllers
                 ViewBag.Result = result;
 
                 // Rediriges a la vista Contrato.cshtml
-                return View("~/Views/Home/Contrato.cshtml");
+                //return View("~/Views/Home/Contrato.cshtml");
+                return RedirectToAction("Resultado", "Home", new { sentData = JsonConvert.SerializeObject(json), response = result });
             }
             else
             {
                 return BadRequest(response.ReasonPhrase);
             }
         }
-
+        
     }
 }

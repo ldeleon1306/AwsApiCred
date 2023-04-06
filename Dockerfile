@@ -20,7 +20,7 @@ FROM build AS publish
 RUN dotnet publish "AwsApiCred.csproj" -c Release -o /app/publish
 
 FROM base AS final
-RUN chgrp -R 0 /app/tmp && chmod -R g=u /app/tmp
+RUN mkdir /app/tmp && chgrp -R 0 /app/tmp && chmod -R g=u /app/tmp
 WORKDIR /app
 COPY --from=publish /app/publish .
 VOLUME /app/tmp/keys

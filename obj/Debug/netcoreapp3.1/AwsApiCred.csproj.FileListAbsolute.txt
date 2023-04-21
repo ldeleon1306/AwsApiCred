@@ -8,10 +8,6 @@ C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\AwsApiCred.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\AwsApiCred.pdb
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\AwsApiCred.Views.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\AwsApiCred.Views.pdb
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\EPPlus.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\EPPlus.Interfaces.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\EPPlus.System.Drawing.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\LinqForEEPlus.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
@@ -19,15 +15,6 @@ C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.CodeA
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -44,7 +31,6 @@ C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\System.Composit
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
@@ -97,9 +83,6 @@ C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\ru\Microsoft.Co
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\bin\Debug\netcoreapp3.1\Microsoft.Office.Interop.Excel.dll
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ldeleon\source\repos\AwsApiCred\obj\Debug\netcoreapp3.1\AwsApiCred.AssemblyInfoInputs.cache

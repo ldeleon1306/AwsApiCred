@@ -167,4 +167,18 @@
             }
         });
     }
+    window.addEventListener('DOMContentLoaded', (event) => {
+        //Obtener el valor actual del input "clientId"
+        var clientIdInput = document.getElementById("userName");
+        var clientIdValue = clientIdInput.value;
+
+        //Eliminar los espacios en blanco del valor de "clientId"
+        clientIdValue = clientIdValue.replace(/\s+/g, '');
+
+        //Agregar "_gla" al final del valor de "clientId"
+        clientIdValue = clientIdValue + "_gla";
+
+        //Asignar el nuevo valor al input "clientId"
+        clientIdInput.value = clientIdValue;
+    });
 </script>

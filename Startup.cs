@@ -49,6 +49,10 @@ namespace AwsApiCred
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "excel",
+                    pattern: "excel",
+                    defaults: new { controller = "Excel", action = "Index" });
+                endpoints.MapControllerRoute(
                     name: "home",
                     pattern: "home",
                     defaults: new { controller = "Home", action = "Index" });

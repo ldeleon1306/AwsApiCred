@@ -1,9 +1,12 @@
 ﻿@using Newtonsoft.Json
+@using Newtonsoft.Json.Linq;
 @*@ViewBag.SentData*@
 
-@*<h1>Datos enviados:</h1>
+@*<h1>Datos enviados:</h1>*@
 
-    ViewBag.JsonData = JsonConvert.SerializeObject(SentData);*@
+
+@*@ViewBag.JsonData = JsonConvert.SerializeObject(SentData);*@
+
 
 
 @if (ViewBag.Result != null)
@@ -14,14 +17,62 @@
 else
 {
     dynamic jsonData = JsonConvert.DeserializeObject(ViewBag.JsonData);
-    <h1>Datos enviados:</h1>
-    <p>@jsonData</p>
-    <h1>Respuesta:</h1>
-    <p>@ViewBag.Response</p>
+    @*<h1>Datos enviados:</h1>
+        <p>@jsonData</p>*@
+    <h1>Usuario generado:</h1>
+    @*<p>@ViewBag.Response</p>*@
     // Convertir la cadena JSON a un objeto dinámico
-   
+    Dictionary<string, object> dataDict = jsonData.ToObject<Dictionary<string, object>>();
 
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre de usuario</th>
+                <th>ID de cliente</th>
+                <th>ID de usuario</th>
+                @*<th>Valor de userId</th>*@
+                <th>Contraseña</th>
+                <th>¿Está activo?</th>
+                <th>ID de grupo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@jsonData["userName"]</td>
+                <td>@jsonData["clientId"]</td>
+                <td>@(ViewBag.Response != null ? JObject.Parse(ViewBag.Response).GetValue("userId").ToString() : "")</td>
+                @*<td>@ViewBag.userId</td>*@
+                <td>@jsonData["password"]</td>
+                <td>@jsonData["isActive"]</td>
+                <td>@jsonData["groupId"]</td>
+            </tr>
+        </tbody>
+    </table>
 
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+
+    @*<form method="post" action="@Url.Action("SaveToExcel", "Excel")">
+            <input type="hidden" name="userName" value="@jsonData.userName" />
+            <input type="hidden" name="password" value="@jsonData.password" />
+            <input type="hidden" name="clientId" value="@jsonData.clientId" />
+            <input type="hidden" name="isActive" value="@jsonData.isActive" />
+            <input type="hidden" name="groupId" value="@jsonData.groupId" />
+            <button type="submit">Grabar en Excel</button>
+        </form>*@
+    <br />
+    <button style="background-color: green; color: #4CAF50; padding: 8px 16px; border: none; border-radius: 5px;" onclick="openPopup()">Abrir Excel Sharepoint</button>
+    <br />
+    <br />
+    <br />
     <form method="post" action="/Home/Asociar">
         <input type="hidden" name="userName" value="@jsonData.userName" />
         <input type="hidden" name="clientId" value="@jsonData.clientId" />
@@ -30,6 +81,13 @@ else
 }
 
 
-
-
 <a href="@Url.Action("Index", "Home")" style="background-color: #4CAF50; color: white; padding: 8px 16px; border: none; border-radius: 5px;">Inicio</a>
+
+<script>
+    function openPopup(jsonData) {
+        var width = screen.width / 2;
+        var height = screen.height;
+        var url = "https://grupologisticoandreani-my.sharepoint.com/:x:/g/personal/gblanco_andreani_com/EUXc59TE-BNNh2YikpqtfCQBqsN5aV20Ykc5DzXibVsErQ?e=1Dcd8o&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTEwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" + encodeURIComponent(JSON.stringify(jsonData));
+        window.open(url, "popup", "width=" + width + ",height=" + height);
+    }
+</script>

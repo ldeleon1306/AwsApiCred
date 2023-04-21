@@ -17,13 +17,5 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="2.1.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Interop.Microsoft.Office.Interop.Excel">
-      <HintPath>..\WorkerServiceAwsCred\bin\Debug\netcoreapp3.1\Interop.Microsoft.Office.Interop.Excel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Office.Interop.Excel">
-      <HintPath>..\..\..\.nuget\packages\microsoft.office.interop.excel\15.0.4795.1001\lib\netstandard2.0\Microsoft.Office.Interop.Excel.dll</HintPath>
-    </Reference>
-  </ItemGroup>
 
 </Project>
